@@ -120,6 +120,11 @@ public class TutorialController {
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+	@GetMapping("/tutorials/{title}")
+	public ResponseEntity<List<Tutorial>>getTutorialDetails(@PathVariable String title) {
 
+		List<Tutorial> data = tutorialRepository.findByTitleContaining(title);
 
+		return new ResponseEntity<>(data, HttpStatus.OK);
+	}
 }
