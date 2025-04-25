@@ -29,7 +29,7 @@ public class TutorialController {
 	@Autowired
 	TutorialRepository tutorialRepository;
 
-	@PostMapping("/tutorials")
+	@PostMapping(value="/tutorials")
 	public ResponseEntity<Tutorial> createTutorial(@RequestBody Tutorial tutorial) {
 		try {
 			Tutorial _tutorial = tutorialRepository

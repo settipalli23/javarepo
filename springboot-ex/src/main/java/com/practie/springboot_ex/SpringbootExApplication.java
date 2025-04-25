@@ -1,15 +1,13 @@
-package com.settipalli;
+package com.practie.springboot_ex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-
-public class SpringbootJpaH2Application {
+public class SpringbootExApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootJpaH2Application.class, args);
+		SpringApplication.run(SpringbootExApplication.class, args);
 	}
 
 }
